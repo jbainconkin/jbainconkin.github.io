@@ -1914,6 +1914,17 @@ select {
       content: " ";
       margin: 0; }
 
+#SearchButton {
+    color:white;
+    display: block;
+    background-color: #555555;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px #333333;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
 button, .button {
   cursor: pointer;
   font-family: "Galaxie Polaris", Arial, sans-serif;
@@ -3407,11 +3418,12 @@ ul.pagination {
     
 }
 div.img {
-    border: 2px solid #0C2340;
+    border: 1px solid #0C2340;
     padding: 20px;
     background-color: #d3d3d3;
     height: 240px;
     color: #0c2340;
+        box-shadow: 1px 1px 5px #0C2340;
 }
 
 div.img:hover {
@@ -3499,7 +3511,8 @@ div.desc {
   border-color: #0C2340;
   margin-bottom: 1.25rem;
   padding: 5rem;
-  background: #888888;}
+  background: #888888;
+    box-shadow: 5px 5px 12px #0C2340;}
   .panel1 > :first-child {
     }
   .panel2 > :last-child {
@@ -3546,7 +3559,8 @@ div.desc {
   border-color: #0C2340;
   margin-bottom: 1.25rem;
   padding: 5rem;
-  background: #888888;}
+  background: #888888;
+box-shadow: 5px 5px 12px #0C2340;}
   .panel2 > :first-child {
     }
   .panel2 > :last-child {
@@ -3591,7 +3605,8 @@ div.desc {
   border-color: #0C2340;
   margin-bottom: 1.25rem;
   padding: 5rem;
-  background: #888888; }
+  background: #888888; 
+box-shadow: 5px 5px 12px #0C2340;}
   .panel3 > :first-child {
     } 
   .panel3 > :last-child {
