@@ -2536,7 +2536,7 @@ select {
 .label {
   display: inline-block;
   padding: 0.33333rem 0.5rem;
-  font-size: 0.8rem;
+  font-size: inherit;
   line-height: 1;
   white-space: nowrap;
   cursor: default;

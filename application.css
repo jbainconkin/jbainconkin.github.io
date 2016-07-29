@@ -87,9 +87,25 @@ img {
 .map_canvas object {
   max-width: none !important; }
 
-/*
+
 .left {
-  float: left !important; }
+  display: table;
+    height: 87px;
+    width: 100%;
+}
+.left li {
+    display: table-cell;
+    width: 20%;  /* (100 / numItems)% */
+    text-align: center;
+    }
+
+@media (max-width: 767px) {
+    #nav li {
+        display: block;
+        width: 100%;
+    }
+}
+
 
 #searchbar {
     float: right;
@@ -97,7 +113,7 @@ img {
 
 .right {
   float: right !important; }
-*/
+
 
 .right {
     list-style: none;
@@ -3075,6 +3091,12 @@ kbd {
     background-color: #e7e7e7;
     color: #333333; }
 
+#GetHelp {
+    font-family: "Galaxie Polaris", Arial, sans-serif;
+    color: white;
+    font-size: 100%; 
+}
+
 [data-magellan-expedition] {
   background: white;
   z-index: 50;
@@ -3416,6 +3438,13 @@ div.desc {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
+}
+
+.pipeline img {
+    text-align: center;
+    float: left;
+    width: auto; 
+    height: 400px;
 }
 
 @media only screen and (max-width: 700px){
@@ -4640,7 +4669,7 @@ meta.foundation-mq-topbar {
     list-style: none;}
   .top-bar .row {
     max-width: none;
-background-color: #0C2340;}
+      background-color: #0C2340;}
   .top-bar form,
   .top-bar input {
     margin-bottom: 0; }
@@ -4749,7 +4778,8 @@ background-color: #0C2340;}
     font-family: "Galaxie Polaris", Arial, sans-serif;
     font-size: 2rem;
     font-weight: normal;
-    background: #0C2340; }
+    background: #0C2340; 
+    float: right;}
     .top-bar-section ul li > a.button {
       background-color: #0C2340;
       font-size: 0.8125rem;
@@ -4877,7 +4907,7 @@ background-color: #0C2340;}
     .top-bar-section li a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background-color: #0C2340; }
+      background-color: #444444;}
       .top-bar-section li a:not(.button):hover {
         background: #272727; }
     .top-bar-section .has-dropdown > a {
@@ -4917,7 +4947,10 @@ background-color: #0C2340;}
         background: #333333; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
-        background: #333333; }
+        background: #333333; 
+        font-size: inherit;
+        font-family: "Galaxie Polaris", Arial, sans-serif;
+        color: white;}
       .top-bar-section .dropdown li .dropdown {
         left: 100%;
         top: 0; }
